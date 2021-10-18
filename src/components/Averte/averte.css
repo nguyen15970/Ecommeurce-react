@@ -1,0 +1,95 @@
+.section{
+    padding: 10rem 0 5rem 0;
+}
+p{
+    margin: 0;
+}
+.averte{
+    display: flex;
+    height: 230px;
+    max-width: 1200px;
+    justify-content: space-between;
+    padding:  0 40px;
+    margin: 25px auto 0 auto;
+}
+.averte-box{
+    height: 100%;
+    width:27.3333%;
+    position: relative;
+    padding: 16px;
+}
+.dotted{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border: 2px dashed #f1f1f1;
+    border-radius: 1rem;
+    
+}
+.averte-box .content h2, .averte-box .content h4 {
+    text-shadow: 5px 6px 0 rgb(37 59 112 / 10%);
+}
+.averte-box .content {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(0, -50%);
+}
+.averte-box img {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.dotted .content h2 {
+    line-height: 1.2;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+.dotted .content h4 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: #fff;
+}
+.title{
+    text-align: center;
+}
+.best-seller{
+    padding-top: 50px;
+}
+.seller-title::after {
+    bottom: 73% !important;
+    width: 8% !important;
+}
+@media   only screen  and (max-width:940px){
+    .averte-box:nth-child(2){
+        display: none;
+    }
+    .averte-box:nth-child(1){
+        width: 47%;
+        margin-right: 10px;
+    }
+    .averte-box:nth-child(3){
+        width: 47%;
+    }
+    .averte{
+        padding: 0 10px;
+    }
+
+}
+@media   only screen  and (max-width:540px){
+    .averte-box:nth-child(1){
+        display: none;
+    }
+    .averte-box:nth-child(3){
+        width: 100%;
+    }
+}

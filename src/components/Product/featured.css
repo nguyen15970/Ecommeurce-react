@@ -1,0 +1,114 @@
+.featured{
+    margin: 100px auto 0 auto;
+    max-width: 120rem;
+} 
+.featured .title {
+    margin: 2rem 0 7rem 0;
+    text-align: center;
+    position: relative;
+    z-index: 0;
+}
+.title h1 {
+    font-size: 3rem;
+    font-family: 'Poppins',sans-serif;
+    color: #243a6f;
+}
+.title h1::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -20%;
+    transform: translate(-50%,-50%);
+    background-color: #f60091;
+    width: 14%;
+    height: 0.4rem;
+    z-index: 1;
+}
+.product-center{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    gap: 7rem 3rem;
+}
+.product {
+    height: 48rem;
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1.5rem rgb(0 0 0 / 15%);
+    border-radius: 1rem;
+    text-align: center;
+    transition: all 300ms ease-in-out;
+}
+.product-header {
+    position: relative;
+    background-color: #fff;
+    height: 35rem;
+    transition: all 300ms ease-in-out;
+    z-index: 0;
+}
+.product-header img {
+    height: 100%;
+    background-color: rgba(0, 0,0 , 0.5);
+}
+.product-header .icons {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(0 ,-50%);
+    z-index: 2;
+    opacity: 0;
+    transition: all 500ms ease-in-out;
+}
+.product-header .icons span {
+    display: block;
+    font-size: 2.2rem;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 1.5rem 1.6rem;
+    line-height: 2rem;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: all 400ms ease-in-out;
+}
+.product-header .icons span:hover{
+    background: pink;
+    color: #fff;
+}
+.product-footer{
+    margin-top: 15px;
+}
+.product-footer h3{
+    font-size: 25px;
+}
+.rating {
+    color: #43b3d9;
+    margin-top: 10px;
+}
+.rating i{
+    font-size: 15px;
+    margin: 5px 5px;
+}
+.rating i:hover{
+    color: yellow;
+}
+.price{
+    font-size: 15px;
+}
+.product:hover .icons{
+    opacity: 2;
+}
+.product:hover .product-header::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 1rem 1rem 0 0;
+    background-color: rgba(0, 0,0 , 0.5);
+    z-index: 1;
+    transition: all 500ms ease-in-out;
+}
+@media   only screen  and (max-width:530px){
+    .product-center{
+        padding: 0 14px;
+    }
+}

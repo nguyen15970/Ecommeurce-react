@@ -1,0 +1,45 @@
+
+.testimonial-center {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    gap: 6rem;
+    max-width: 1200px;
+    margin: 40px auto 0 auto;
+    
+}
+.testimonial {
+    position: relative;
+    padding: 5rem;
+    background: #fff;
+    box-shadow: 0 0.5rem 1.5rem rgb(0 0 0 / 10%);
+    transition: all 300ms ease-in-out;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+.testimonial span {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    font-size: 12rem;
+    transform: translate(-50%,0);
+    line-height: 1;
+    font-family: sans-serif;
+    color: #243a6f;
+}
+.testimonial p {
+    margin: 2rem 0 1rem 0;
+    font-size: 20px;
+}
+.testimonial .rating {
+    margin-bottom: 1rem;
+}
+.testimonial .img-cover {
+    border-radius: 50%;
+    width: 8rem;
+    height: 8rem;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.testimonial .img-cover img{
+    height: 100%;
+}

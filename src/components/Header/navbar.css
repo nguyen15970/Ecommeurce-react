@@ -1,0 +1,80 @@
+.home{
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 1300px;
+    margin: 20px auto 0 auto;
+}
+.navbar-seach{
+    display: flex;
+    position: relative;
+}
+.navbar-seach input{
+    height: 15px;
+    margin-left: 10px;
+}
+.navbar-seach span>i{
+    font-size: 1.3rem;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+.navbar-seach h2{
+    color :rgb(160, 156, 156);
+    font-weight: 400;
+}
+.logo{
+    margin-right: 20px;
+    font-size: 2.7rem;
+    margin-bottom: 10px;
+}
+.navbar-signin{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+}
+.navbar-signin h2{
+    margin: 0 20px;
+    color: rgb(97, 94, 94);
+}
+.navbar-signin span >i{
+    font-size: 1.6rem;
+    margin-top: 2px;
+}
+.navbar-number-cart{
+    background: rgb(82, 82, 236);
+    color: #fff;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    text-align: center ;
+    position: absolute;
+    right: -9px;
+    top: -5px;
+
+}
+.announcement{
+    height: 30px;
+    background: teal;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+@media   only screen  and (max-width:940px){
+    .navbar{
+        width: 90% !important;
+    }
+}
+@media   only screen  and (max-width:530px){
+    .logo{
+        display: none !important;
+    }
+}
