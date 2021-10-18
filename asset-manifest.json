@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Ecommeurce-react/static/css/main.cf091c58.chunk.css",
+    "main.js": "/Ecommeurce-react/static/js/main.bfd5b160.chunk.js",
+    "main.js.map": "/Ecommeurce-react/static/js/main.bfd5b160.chunk.js.map",
+    "runtime-main.js": "/Ecommeurce-react/static/js/runtime-main.a3308a9e.js",
+    "runtime-main.js.map": "/Ecommeurce-react/static/js/runtime-main.a3308a9e.js.map",
+    "static/css/2.bed123d2.chunk.css": "/Ecommeurce-react/static/css/2.bed123d2.chunk.css",
+    "static/js/2.0c0a271c.chunk.js": "/Ecommeurce-react/static/js/2.0c0a271c.chunk.js",
+    "static/js/2.0c0a271c.chunk.js.map": "/Ecommeurce-react/static/js/2.0c0a271c.chunk.js.map",
+    "static/js/3.9a77105e.chunk.js": "/Ecommeurce-react/static/js/3.9a77105e.chunk.js",
+    "static/js/3.9a77105e.chunk.js.map": "/Ecommeurce-react/static/js/3.9a77105e.chunk.js.map",
+    "index.html": "/Ecommeurce-react/index.html",
+    "static/css/2.bed123d2.chunk.css.map": "/Ecommeurce-react/static/css/2.bed123d2.chunk.css.map",
+    "static/css/main.cf091c58.chunk.css.map": "/Ecommeurce-react/static/css/main.cf091c58.chunk.css.map",
+    "static/js/2.0c0a271c.chunk.js.LICENSE.txt": "/Ecommeurce-react/static/js/2.0c0a271c.chunk.js.LICENSE.txt",
+    "static/media/font-awesome.min.css": "/Ecommeurce-react/static/media/fontawesome-webfont.f691f37e.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a3308a9e.js",
+    "static/css/2.bed123d2.chunk.css",
+    "static/js/2.0c0a271c.chunk.js",
+    "static/css/main.cf091c58.chunk.css",
+    "static/js/main.bfd5b160.chunk.js"
+  ]
+}
