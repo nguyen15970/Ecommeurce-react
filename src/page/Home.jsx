@@ -12,6 +12,7 @@ import Banner from '../components/ProductBanner/banner';
 import Testimonial from '../components/testimonial/testimonial';
 
 
+
 function Home(props) {
     return (
         <body className='home'>

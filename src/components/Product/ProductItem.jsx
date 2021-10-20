@@ -1,13 +1,22 @@
-import React from 'react';
+import {React ,useEffect} from 'react';
 import PropTypes from 'prop-types';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 ProductItem.propTypes = {
     
 };
 
 function ProductItem(props) {
+    useEffect(() => {
+        AOS.init({
+            
+            duration:1000,
+            easing:"ease"
+        });
+     });
     return (
-        <div className='product' key={props.key}>
+        <div data-AOS="fade-up" className='product' key={props.key}>
                     <div className='product-header'>
                         <img src={props.image}></img>
                         <ul className='icons'>

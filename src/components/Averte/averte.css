@@ -17,6 +17,7 @@ p{
     width:27.3333%;
     position: relative;
     padding: 16px;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
 }
 .dotted{
     position: relative;
@@ -66,8 +67,27 @@ p{
     padding-top: 50px;
 }
 .seller-title::after {
-    bottom: 73% !important;
-    width: 8% !important;
+    
+    width: 10% !important;
+}
+.btn-seemore{
+    position: absolute;
+    left:28%;
+    width: 132px;
+    bottom: 29px;
+    height: 35px;
+    border-radius: 9px;
+    background: transparent;
+    color: #ccc;
+    border: 1px solid #009688;
+    cursor: pointer;
+    font-weight: 400;
+    /* background-color: #1c3230; */
+}
+.btn-seemore:hover{
+    background-color: rgba(129, 207, 224, 1);
+    color: #fff;
+    
 }
 @media   only screen  and (max-width:940px){
     .averte-box:nth-child(2){
@@ -91,5 +111,8 @@ p{
     }
     .averte-box:nth-child(3){
         width: 100%;
+    }
+    .content{
+        right: 16% !important;
     }
 }

@@ -2,42 +2,41 @@ import React from 'react';
 import "./averte.css"
 import "../Product/featured.css"
 function Averte(props) {
+    const bestSell = [
+      {
+        id:1,
+        title:`Women 's Fashion`,
+        imgae:"https://cdn.pixabay.com/photo/2018/01/29/17/01/woman-3116587_960_720.jpg"
+      },
+      {
+        id:2,
+        title:`Boy 's Fashion`,
+        imgae:"https://cdn.pixabay.com/photo/2016/02/19/10/56/hip-hop-1209499__340.jpg"
+      },
+      {
+        id:3,
+        title:`Child 'S Fashion`,
+        imgae:"https://cdn.pixabay.com/photo/2015/12/08/05/58/ice-skates-1082514__340.jpg"
+      }
+    ]
     return (
       <div className='best-seller'>
           <div className ='title'>
-                <h1 className='seller-title'>Best Seller</h1>
+                <h1 className='seller-title'>Best Sell</h1>
           </div>
           <div className='averte'>
-            <div className="averte-box">
-              <div className="dotted">
-                <div className="content">
-                    <h2>Girls 
-                    <p>clothing </p></h2>
-                    <h4>Worlds Best Brands</h4>
+              {bestSell.map(product => (
+                   <div className="averte-box">
+                   <div className="dotted">
+                     <div className="content">
+                         <h2>{product.title}</h2>
+                         <h4>Worlds Best Brands</h4>
+                         </div>
+                        <button className='btn-seemore'>SEE MORE</button>
                     </div>
-                </div>
-                <img src="https://list.vn/wp-content/uploads/2018/11/th%E1%BB%9Di-trang-22.jpg" className='averte-box-img' alt=""></img>
-            </div>
-            <div className="averte-box">
-              <div className="dotted">
-                <div className="content">
-                    <h2>Girls 
-                    <p>clothing </p></h2>
-                    <h4>Worlds Best Brands</h4>
-                    </div>
-                </div>
-                <img src="https://file.hstatic.net/1000327709/file/thoi-trang-nam-dep__2__6fb4c15a032c4d5f905f1bd68e638473_grande.jpg" alt=""></img>
-            </div>
-            <div className="averte-box">
-              <div className="dotted">
-                <div className="content">
-                    <h2>Girls 
-                              <p>clothing </p></h2>
-                    <h4>Worlds Best Brands</h4>
-                    </div>
-                </div>
-                <img src="https://icdn.dantri.com.vn/thumb_w/640/2020/11/12/dantri-thoi-trang-nu-ha-thu-nang-tho-hien-dai-va-khi-chat-finaldocx-1605167916250.jpeg  " alt=""></img>
-            </div>
+                     <img src={product.imgae} className='averte-box-img' alt=""></img>
+                 </div>
+              ))}
         </div>
       </div>  
     );
