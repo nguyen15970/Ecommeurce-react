@@ -1,6 +1,9 @@
-import React from 'react';
+import {React ,useEffect} from 'react';
 import "./averte.css"
 import "../Product/featured.css"
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+
 function Averte(props) {
     const bestSell = [
       {
@@ -19,14 +22,22 @@ function Averte(props) {
         imgae:"https://cdn.pixabay.com/photo/2015/12/08/05/58/ice-skates-1082514__340.jpg"
       }
     ]
+    useEffect(() => {
+      AOS.init(
+       {
+           duration:1000,
+           easing:"ease"
+       }
+      );
+   });
     return (
       <div className='best-seller'>
           <div className ='title'>
-                <h1 className='seller-title'>Best Sell</h1>
+                <h1 className='seller-title' data-aos="zoom-in-up">Best Sell</h1>
           </div>
           <div className='averte'>
               {bestSell.map(product => (
-                   <div className="averte-box">
+                   <div className="averte-box" data-aos="fade-up">
                    <div className="dotted">
                      <div className="content">
                          <h2>{product.title}</h2>

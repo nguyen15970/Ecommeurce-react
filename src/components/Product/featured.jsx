@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import './featured.css'
 import ProductItem from './ProductItem';
 import AOS from 'aos';
-
+import 'aos/dist/aos.css'
 const Products =[
     {
         id:1,
@@ -56,19 +56,18 @@ const Products =[
 ]
 
 function Featured(props) {
-    const [product, setProduct] = useState(Products)
-    console.log(Products)
     useEffect(() => {
-       AOS.init(
-        {
+        AOS.init({
+            
             duration:1000,
             easing:"ease"
-        }
-       );
-    });
+        });
+     });
+    const [product, setProduct] = useState(Products)
+    console.log(Products)
     return (
         <section className ='featured'>   
-            <div className ='title' data-aos='fade-down'>
+            <div data-aos="fade-up" className ='title' >
                 <h1>Featured Products</h1>
             </div>
             <div className="product-center">

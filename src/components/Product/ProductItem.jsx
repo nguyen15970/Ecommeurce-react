@@ -7,6 +7,7 @@ ProductItem.propTypes = {
     
 };
 
+
 function ProductItem(props) {
     useEffect(() => {
         AOS.init({
@@ -16,7 +17,7 @@ function ProductItem(props) {
         });
      });
     return (
-        <div data-AOS="fade-up" className='product' key={props.key}>
+        <div className='product' key={props.key}>
                     <div className='product-header'>
                         <img src={props.image}></img>
                         <ul className='icons'>
